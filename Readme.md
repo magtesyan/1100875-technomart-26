@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Mikael Magtesyan](https://up.htmlacademy.ru/htmlcss/26/user/1100875).
-* Наставник: [Евгений Москвин] (https://up.htmlacademy.ru/htmlcss/26/user/815117)
+* Наставник: `Неизвестно`.
 
 ---
 
