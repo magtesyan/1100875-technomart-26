@@ -9,28 +9,28 @@
   </head>
   <body>
     <header>
-      <p>
+      <p class="headline">
         Интернет-магазин<br>
         строительных материалов<br>
         и инструментов для ремонта
       </p>
-      <a href="tel:+78125550555" aria-label="телефон магазина Техномарт +78125550555">+7 (812) 555-05-55</a>
-      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <ul>
+      <a class="header-phone" href="tel:+78125550555" aria-label="телефон магазина Техномарт +78125550555">+7 (812) 555-05-55</a>
+      <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      <ul class="profile-menu">
         <li><a href="login.html">Войти</a></li>
         <li><a href="registration.html">Регистрация</a></li>
       </ul>
-      <div>
-        <a href="index.html" aria-label="Логотип магазина Техномарт"><img src="img/logo.png" width="138" height="23" alt="Техномарт"></a>
+      <div class="header-top-line">
+        <a class="logo" href="index.html" aria-label="Логотип магазина Техномарт"><img src="img/logo.png" width="138" height="23" alt="Техномарт"></a>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <label for="search">Поиск</label>
+          <label class="visually-hidden" for="search">Поиск</label>
           <button type="submit" aria-label="Поиск по сайту"></button>
           <input type="search" id="search" placeholder="Поиск">
         </form>
-        <ul>
-          <li><a href="bookmarks.html">Закладки</a></li>
-          <li><a href="basket.html">Корзина</a></li>
-          <li><a href="order.html">Оформить заказ</a></li>
+        <ul class="user-menu">
+          <li><a href="bookmarks.html">Закладки: 0</a></li>
+          <li><a href="basket.html">Корзина: 0</a></li>
+          <li><a class="user-menu-order-link" href="order.html">Оформить заказ</a></li>
         </ul>
       </div>
       <nav class="main-navigation">
@@ -50,7 +50,7 @@
 
       <section>
         <h2 class="visually-hidden">Категории товаров</h2>
-        <ul>
+        <ul class="product-category-list">
           <li>
             <p>Материалы</p>
             <a href="materials.html" aria-label="Материалы">На любой вкус</a>

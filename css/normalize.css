@@ -347,3 +347,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/* added by Mikael
+========================
+*/
+
+address {
+  font-style: normal;
+}

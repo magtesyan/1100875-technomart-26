@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
+  /* font-family: "PT Sans", Arial, sans-serif; */
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
@@ -12,15 +13,127 @@ body {
 }
 
 a {
-  font-family: "Cuprum", Arial, sans-serif;
   text-decoration: none;
   color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.header-top-line {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #32425c;
+}
+
+.logo {
+  background-color: #ee3643;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+input[type="search"] {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+input[type="search"]::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"]:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.headline {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ff3333;
+}
+
+.header-address {
+  font-size: 14px;
+  color: #32425c;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ff3333;
+}
+
+.profile-menu {
+  list-style: none;
+}
+
+.profile-menu a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.profile-menu a:hover {
+  color: #ff3333;
+}
+
+.profile-menu a:active {
+  opacity: 0.3;
+}
+
+.user-menu {
+  list-style: none;
+}
+
+.user-menu a {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.user-menu a:hover {
+  background-color: #212a3a
+}
+
+.user-menu a:active {
+  background-color: #161d29;
+}
+
+.user-menu-order-link {
+  background-color: #63a63e;
+}
+
+a.user-menu-order-link:hover {
+  background-color: #5fbb2d;
+}
+
+a.user-menu-order-link:active {
+  background-color: #518534;
 }
 
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
-  background-color: #333366;
+  background-color: #32425c;
 }
 
 .site-navigation {
@@ -29,9 +142,13 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: #333333;
+  background-color: #293449;
 }
 
 .site-navigation a:active {
-  background-color: #333333;
+  background-color: #1d2739;
+}
+
+.product-category-list {
+  list-style: none;
 }
