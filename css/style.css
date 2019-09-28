@@ -12,6 +12,10 @@ body {
   background-color: #ffffff;
 }
 
+.pt-sans {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -23,6 +27,10 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+header {
+  background-color: #f3f7f8;
 }
 
 .header-top-line {
@@ -149,6 +157,131 @@ a.user-menu-order-link:active {
   background-color: #1d2739;
 }
 
-.product-category-list {
+.main-product-category-list,
+.special-offers-list {
   list-style: none;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.main-product-category-materials {
+  background-color: #ffbf47;
+}
+
+.main-product-category-instrument {
+  background-color: #3bbce3;
+}
+
+.main-product-category-technique {
+  background-color: #dc91d8;
+}
+
+.special-offer-discount {
+  background-color: #8ed78f;
+}
+
+.special-offer-delivery {
+  background-color: #ffc047;
+}
+
+.main-product-category-list a,
+.special-offers-list a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-product-category-list a:hover,
+.special-offers-list a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-product-category-list a:active,
+.special-offers-list a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+  list-style: none;
+  background-color: #584e44;
+}
+
+.slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.slider ~ a {
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.slider ~ a:hover {
+  background-color: #ca2c37;
+}
+
+.slider ~ a:active {
+  background-color: #ba2732;
+}
+
+.main-section-heading {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #333366;
+  background-color: #f3f7f8;
+}
+
+.main-section-heading ~ a {
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.products-list {
+  list-style: none;
+  font-weight: bold;
+}
+
+.products-list li {
+  border: 1px solid #cccccc;
+}
+
+.products-list li:hover {
+  box-shadow: 0 10px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.products-list h2 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.current-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
 }

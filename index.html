@@ -50,16 +50,16 @@
 
       <section>
         <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="product-category-list">
-          <li>
+        <ul class="main-product-category-list">
+          <li class="main-product-category-materials">
             <p>Материалы</p>
             <a href="materials.html" aria-label="Материалы">На любой вкус</a>
           </li>
-          <li>
+          <li class="main-product-category-instrument">
             <p>Инструмент</p>
             <a href="materials.html" aria-label="Инструмент">На все случаи</a>
           </li>
-          <li>
+          <li class="main-product-category-technique">
             <p>Техника</p>
             <a href="materials.html" aria-label="Техника">Для стройки</a>
           </li>
@@ -68,10 +68,10 @@
       <div>
         <section>
           <h2 class="visually-hidden">Специальные предложения</h2>
-          <ul>
+          <ul class="slider">
             <li>
               <h3>Дрели</h3>
-              <p>Соседям на радость</p>
+              <p>Соседям на радость!</p>
               <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
             </li>
             <li>
@@ -84,12 +84,12 @@
           <button type="button" aria-label="Следующий слайд">&gt;</button>
           <a href="catalog.html">Открыть каталог</a>
         </section>
-        <ul>
-          <li>
+        <ul class="special-offers-list">
+          <li class="special-offer-discount">
             <p>Скидки 50%</p>
             <a href="materials.html" aria-label="Скидки">На 350 товаров</a>
           </li>
-          <li>
+          <li class="special-offer-delivery">
             <p>Доставка</p>
             <a href="materials.html" aria-label="Доставка">Бесплатно</a>
           </li>
@@ -97,16 +97,14 @@
       </div>
 
       <section>
-        <h2>Популярные товары:</h2>
+        <h2 class="main-section-heading">Популярные товары:</h2>
         <a href="">Все популярные товары</a>
-        <ul>
+        <ul class="products-list pt-sans">
           <li>
-            <a href="">
             <img src="img/products/bosch-bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-            <h2>Перфоратор BOSCH BFG 9000</h2>
-            <span>30500 Р.</span><br>
-            <span>25500 Р.</span>
-            </a>
+            <h2 class="product-name">Перфоратор BOSCH BFG 9000</h2>
+            <span class="old-price">30500 Р.</span><br>
+            <span class="current-price">25500 Р.</span>
           </li>
           <li>
             <a href="">
@@ -136,7 +134,8 @@
       </section>
 
       <section>
-        <h2>Популярные производители:</h2>
+        <h2 class="main-section-heading">Популярные производители:</h2>
+        <a href="">Все производители</a>
         <ul>
           <li><a href="" aria-label="Bosch"><img src="img/manufacturers/bosch.png" width="126" height="37" alt="Логотип Bosch"></a></li>
           <li><a href="" aria-label="Makita"><img src="img/manufacturers/makita.png" width="123" height="40" alt="Логотип Makita"></a></li>
