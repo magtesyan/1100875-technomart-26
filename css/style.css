@@ -14,11 +14,26 @@ body {
 
 .pt-sans {
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #333366;
 }
 
 .visually-hidden {
@@ -263,8 +278,20 @@ a.user-menu-order-link:active {
   border: 1px solid #cccccc;
 }
 
+.products-list li button {
+  display: none;
+}
+
 .products-list li:hover {
   box-shadow: 0 10px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.products-list li:hover img {
+  display: none;
+}
+
+.products-list li:hover button {
+  display: block;
 }
 
 .products-list h2 {
@@ -284,4 +311,171 @@ a.user-menu-order-link:active {
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.btn-buy {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.btn-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+  background-color: #518534;
+}
+
+.btn-bookmark {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #333366;
+  background-color: #ffffff;
+  border: 3px solid #669933;
+}
+
+.btn-bookmark:hover {
+  border-color: #333366;
+}
+
+.btn-bookmark:active {
+  opacity: 0.3;
+}
+
+.manufacturers {
+  list-style: none;
+}
+
+.manufacturers li {
+  border: 1px solid #cccccc;
+}
+
+.manufacturers li:hover {
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.manufacturers li:active {
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.buying-conditions {
+  list-style: none;
+}
+
+.buying-conditions a {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: #32425c;
+}
+
+.buying-conditions a:hover {
+  background-color: #293449;
+}
+
+.buying-conditions .active a {
+  color: #333366;
+  background-color: #ffffff;
+}
+
+.buying-conditions-tab-slides {
+  list-style: none;
+}
+
+.send-credit-request {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ff5357;
+}
+
+.delivery-partners li {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-more-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.btn-reply {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.footer-upper-part {
+  background-color: #32425c;
+}
+
+.footer-address {
+  color: #ffffff;
+}
+
+.footer-site-navigation,
+.footer-product-category-navigation {
+  list-style: none;
+}
+
+.footer-product-category-navigation a,
+.footer-reply-link,
+.developer-link {
+  color: #ffcc99;
+}
+
+.footer-site-navigation li:hover,
+.footer-product-category-navigation li:hover,
+.footer-reply-link:hover,
+.developer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-site-navigation li:active,
+.footer-product-category-navigation li:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-lower-part {
+  background-color: #293449;
+}
+
+.copyright,
+.footer-reply,
+.developer {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.social-icons {
+  list-style: none;
+}
+
+.social-icons li {
+  background-color: #212a3a;
+}
+
+.social-icons li:hover,
+.social-icons li:active {
+  background-color: #ee3643;
+}
+
+.footer-reply-link:active,
+.developer-link:active {
+  color: #ff3333;
+  text-decoration: none;
 }
