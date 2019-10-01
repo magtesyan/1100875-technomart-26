@@ -120,6 +120,18 @@ input[type="search"]:focus {
   color: #ff3333;
 }
 
+a.user-name:hover {
+  color: #000000;
+}
+
+a.my-orders-link,
+a.account-link {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #333366;
+}
+
 .profile-menu a:active {
   opacity: 0.3;
 }
@@ -170,6 +182,97 @@ a.user-menu-order-link:active {
 
 .site-navigation a:active {
   background-color: #1d2739;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-heading,
+.sorting-heading {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+fieldset {
+  border: none;
+}
+
+legend.pt-sans {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.filter-range-from-to {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+}
+
+p.filter-range-between {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter-manufacturers-list,
+.filter-supply-list {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.filter-manufacturers-list input:disabled + label,
+.filter-supply-list input:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-submit-btn {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting-options-list {
+  list-style: none;
+}
+
+.sorting-options-list a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ff3333;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-options-list a:hover {
+  border-bottom: 1px solid #ff3333;
+  opacity: 1;
+}
+
+.sorting-options-list a.active {
+  border: none;
+  color: #ff3333;
+  opacity: 1;
 }
 
 .main-product-category-list,
@@ -347,6 +450,30 @@ a.user-menu-order-link:active {
   opacity: 0.3;
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+}
+
+.pagination-list a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-list a.current {
+  background-color: #ee3643;
+}
+
 .manufacturers {
   list-style: none;
 }
@@ -364,6 +491,10 @@ a.user-menu-order-link:active {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
+}
+
+.services {
+  background-color: #f4f8fa;
 }
 
 .buying-conditions {
@@ -415,6 +546,10 @@ a.user-menu-order-link:active {
   border: none;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.article-perforators {
+  background-color: #f2f6f8;
 }
 
 .footer-upper-part {
