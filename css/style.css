@@ -15,6 +15,7 @@ body {
 *, *::after, *::before {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -240,6 +241,7 @@ a.user-menu-order-link:active {
   width: 940px;
   min-height: 55px;
   margin: auto;
+  margin-bottom: 60px;
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
@@ -250,6 +252,7 @@ a.user-menu-order-link:active {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
   width: 940px;
   list-style: none;
 }
@@ -358,8 +361,21 @@ p.filter-range-between {
   opacity: 1;
 }
 
+.product-category-section {
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 940px;
+}
+
 .main-product-category-list,
 .special-offers-list {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  padding: 0;
+  margin: 0;
   list-style: none;
   font-size: 24px;
   line-height: 30px;
@@ -367,30 +383,61 @@ p.filter-range-between {
   color: #ffffff;
 }
 
+.special-offers-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
 .main-product-category-materials {
   background-color: #ffbf47;
+  width: 300px;
+  min-height: 123px;
 }
 
 .main-product-category-instrument {
   background-color: #3bbce3;
+  width: 300px;
+  min-height: 123px;
 }
 
 .main-product-category-technique {
   background-color: #dc91d8;
+  width: 300px;
+  min-height: 123px;
 }
 
 .special-offer-discount {
   background-color: #8ed78f;
+  width: 300px;
+  min-height: 123px;
 }
 
 .special-offer-delivery {
   background-color: #ffc047;
+  width: 300px;
+  min-height: 123px;
+}
+
+.main-product-category-list p,
+.special-offers-list p {
+  margin-left: 24px;
+  margin-top: 18px;
+  margin-bottom: 15px;
 }
 
 .main-product-category-list a,
 .special-offers-list a {
+  display: block;
+  border-radius: 4%;
   font-size: 14px;
   line-height: 18px;
+  width: 139px;
+  padding: 10px 0;
+  margin-left: 25px;
+  margin-bottom: 22px;
+  text-align: center;
   font-weight: normal;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
@@ -406,13 +453,44 @@ p.filter-range-between {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.special-offers-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 940px;
+  min-height: 266px;
+}
+
+.special-offers-list-container {
+  display: flex;
+}
+
+.special-offers-slider-section {
+  position: relative;
+}
+
 .slider {
+  position: relative;
+  display: block;
+  padding: 0;
+  width: 620px;
+  min-height: 266px;
   list-style: none;
   color: #ffffff;
+}
+
+.slider img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
   background-color: #584e44;
 }
 
 .slider h3 {
+  margin: 0px;
+  padding-top: 25px;
+  padding-left: 25px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -423,11 +501,43 @@ p.filter-range-between {
 .slider p {
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  padding-left: 25px;
   font-weight: normal;
   color: #ffffff;
 }
 
+.slider-btn-left {
+  position: absolute;
+  left: 25px;
+  bottom: 112px;
+  border: none;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/slider-icon-left.svg);
+  background-repeat : no-repeat;
+  background-color: transparent;
+}
+
+.slider-btn-right {
+  position: absolute;
+  right: 25px;
+  bottom: 112px;
+  border: none;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/slider-icon-right.svg);
+  background-repeat : no-repeat;
+  background-color: transparent;
+}
+
 .slider ~ a {
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
+  z-index: 2;
+  border-radius: 3%;
+  padding: 10px 40px;
   text-transform: uppercase;
   background-color: #ee3643;
 }
@@ -440,29 +550,66 @@ p.filter-range-between {
   background-color: #ba2732;
 }
 
+.main-section-heading-and-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 940px;
+
+  background-color: #f9f5f0;
+}
+
 .main-section-heading {
+  margin-left: 30px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
   color: #333366;
-  background-color: #f3f7f8;
 }
 
 .main-section-heading ~ a {
+  margin-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 253px;
+  text-align: center;
   font-size: 14px;
   line-height: 28px;
   text-transform: uppercase;
+  border-radius: 5%;
   background-color: #ee3643;
 }
 
 .products-list {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 940px;
+  padding: 0;
   list-style: none;
   font-weight: bold;
 }
 
 .products-list li {
-  border: 1px solid #cccccc;
+  display: block;
+  min-height: 318px;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 0;
+  /* border: 1px solid #eaeaea; */
+  border: 1px solid blue;
+}
+
+.product-card-btns-container {
+  margin-top: 44px;
+  margin-bottom: 8px;
+  min-height: 126px;
+  width: 218px;
+  display: none;
 }
 
 .products-list li button {
@@ -477,16 +624,21 @@ p.filter-range-between {
   display: none;
 }
 
-.products-list li:hover button {
+.products-list li:hover button,
+.products-list li:hover .product-card-btns-container {
   display: block;
 }
 
 .products-list h2 {
+  margin: 0;
+  padding: 0 14px;
   font-size: 18px;
   line-height: 20px;
 }
 
 .old-price {
+  display: block;
+  margin-top: 15px;
   font-size: 17px;
   line-height: 18px;
   text-decoration: line-through;
@@ -494,13 +646,32 @@ p.filter-range-between {
 }
 
 .current-price {
+  position: relative;
+  width: 141px;
+  margin-bottom: 20px;
+  padding: 9px 30px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
 }
 
+.current-price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+
 .btn-buy {
+  width: 135px;
+  margin: auto;
+  margin-bottom: 7px;
+  padding-top:  6px;
+  padding-bottom: 6px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -518,6 +689,11 @@ p.filter-range-between {
 }
 
 .btn-bookmark {
+  width: 135px;
+  margin: auto;
+  margin-bottom: 0;
+  padding-top:  6px;
+  padding-bottom: 6px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -559,10 +735,23 @@ p.filter-range-between {
 }
 
 .manufacturers {
+  display: flex;
+  width: 940px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
   list-style: none;
 }
 
 .manufacturers li {
+  display: flex;
+  width: 220px;
+  min-height: 145px;
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
   border: 1px solid #ebebeb;
 }
 
@@ -575,6 +764,10 @@ p.filter-range-between {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
+}
+
+.manufacturers li a {
+  margin: auto;
 }
 
 .services {
