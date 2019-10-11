@@ -76,6 +76,7 @@ h4 {
 
 .logo-and-search {
   display: flex;
+  width: 1280px;
 }
 
 .logo-header {
@@ -85,7 +86,6 @@ h4 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 42px;
-  margin-right: 15px;
   box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
 }
 
@@ -97,16 +97,21 @@ h4 {
   background-color: #ba2732;
 }
 
-
+.search-form {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 272px;
+}
 
 input[type="search"] {
   display: inline-block;
-  margin-top: 10px;
   font-size: 17px;
   line-height: 18px;
+  width: 222px;
+  height: 100%;
   border: none;
-  background-color: #32425c;
   color: #ffffff;
+  background-color: #32425c;
 }
 
 input[type="search"]::placeholder {
@@ -119,11 +124,47 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-input[type="search"]:focus {
-  width: 100%;
+.search-form:hover .search-submit-btn path {
+  fill: #ffffff;
+}
+
+.search-form:hover input[type="search"] {
+  background-color: #212a3a;
+  color: #ffffff;
+}
+
+.search-form:hover .search-submit-btn {
+  background-color: #212a3a;
+}
+
+input[type="search"]:focus,
+input[type="search"]:focus:hover {
+  width: 222px;
+  outline: none;
   background-color: #ffffff;
   color: #000000;
 }
+
+.search-submit-btn {
+  width: 50px;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.search-submit-btn path {
+  fill: #6a7180;
+}
+
+input[type="search"]:focus + .search-submit-btn,
+input[type="search"]:focus:hover + .search-submit-btn {
+  background-color: #ffffff;
+}
+
+input[type="search"]:focus + .search-submit-btn path {
+  fill: red;
+}
+
 
 .header-mid-containter {
   display: flex;
@@ -175,12 +216,31 @@ input[type="search"]:focus {
   background-color: #ffffff;
 }
 
+.profile-menu polygon,
+.profile-menu path {
+  fill: #c5c5c5;
+}
+
 .profile-menu a:hover {
   color: #ff3333;
 }
 
+.profile-menu a:hover polygon,
+.profile-menu a:hover path {
+  fill: #32425c;
+}
+
 a.user-name:hover {
   color: #000000;
+}
+
+.profile-menu a:active span {
+  opacity: 0.3;
+}
+
+.profile-menu a:active polygon,
+.profile-menu a:active path {
+  fill: #c5c5c5;
 }
 
 a.my-orders-link,
@@ -191,9 +251,6 @@ a.account-link {
   color: #333366;
 }
 
-.profile-menu a:active {
-  opacity: 0.3;
-}
 
 .user-menu {
   display: flex;
@@ -214,6 +271,8 @@ a.account-link {
 .user-menu a {
   display: inline-block;
   padding: 15px 20px 15px 20px;
+  width: 100%;
+  text-align: center;
   font-size: 17px;
   line-height: 18px;
 }
@@ -226,9 +285,52 @@ a.account-link {
   background-color: #161d29;
 }
 
+.user-menu-bookmarks-link {
+  position: relative;
+}
+
+.user-menu-bookmarks-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position:  0 50%;
+  opacity: 0.3;
+}
+
+.user-menu-cart-link {
+  position: relative;
+}
+
+.user-menu-cart-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position:  0 50%;
+  opacity: 0.3;
+}
+
+.user-menu-bookmarks-link:hover::before,
+.user-menu-cart-link:hover::before {
+  opacity: 1;
+}
+
+.user-menu-bookmarks-link:active::before,
+.user-menu-cart-link:active::before {
+  opacity: 0.5;
+}
+
 .user-menu-order-link {
   display: inline-block;
   min-height: 47px;
+  padding: 0 10px;
   background-color: #63a63e;
 }
 
