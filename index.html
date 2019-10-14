@@ -9,33 +9,6 @@
   </head>
   <body>
     <header>
-      <div class="header-mid-containter">
-        <div class="header-mid-line">
-          <p class="headline">
-            Интернет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
-          </p>
-          <div class="phone-and-address-containter">
-            <a class="header-phone" href="tel:+78125550555" aria-label="телефон магазина Техномарт +78125550555">+7 (812) 555-05-55</a>
-            <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          </div>
-          <ul class="profile-menu">
-            <li>
-              <a href="login.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="17px" viewBox="0 0 20 17">
-                  <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"></polygon>
-                  <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
-	                  v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z">
-                  </path>
-                </svg>
-                <span>Войти</span>
-              </a>
-            </li>
-            <li><a href="registration.html">Регистрация</a></li>
-          </ul>
-        </div>
-      </div>
       <div class="header-top-container">
         <div class="header-top-line">
           <div class="logo-and-search">
@@ -61,6 +34,33 @@
           </ul>
         </div>
       </div>
+      <div class="header-mid-containter">
+        <div class="header-mid-line">
+          <p class="headline">
+            Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
+          </p>
+          <div class="phone-and-address-containter">
+            <a class="header-phone" href="tel:+78125550555" aria-label="телефон магазина Техномарт +78125550555">+7 (812) 555-05-55</a>
+            <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          </div>
+          <ul class="profile-menu">
+            <li>
+              <a href="login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="17px" viewBox="0 -3 20 20">
+                  <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"></polygon>
+                  <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+	                  v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z">
+                  </path>
+                </svg>
+                <span>Войти</span>
+              </a>
+            </li>
+            <li><a href="registration.html"><span>Регистрация</span></a></li>
+          </ul>
+        </div>
+      </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
@@ -82,6 +82,7 @@
           <li class="main-product-category-materials">
             <p>Материалы</p>
             <a href="materials.html" aria-label="Материалы">На любой вкус</a>
+            <div class="flag flag-new">новинка</div>
           </li>
           <li class="main-product-category-instrument">
             <p>Инструмент</p>
@@ -142,9 +143,10 @@
               <button class="btn-buy">Купить</button>
               <button class="btn-bookmark">В закладки</button>
             </div>
-            <h2 class="product-name">Перфоратор BOSCH BFG 9000</h2>
-            <span class="old-price">30500 Р.</span><br>
+            <h2 class="product-name">Перфоратор BOSCH</h2>
+            <span class="old-price">30500 Р.</span>
             <span class="current-price">25500 Р.</span>
+            <div class="flag flag-new">новинка</div>
           </li>
           <li>
             <img src="img/products/bosch-bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -153,7 +155,7 @@
               <button class="btn-bookmark">В закладки</button>
             </div>
             <h2>Перфоратор BOSCH BFG 3000</h2>
-            <span class="old-price">30500 Р.</span><br>
+            <span class="old-price">30500 Р.</span>
             <span class="current-price">25500 Р.</span>
           </li>
           <li>
@@ -163,7 +165,7 @@
               <button class="btn-bookmark">В закладки</button>
             </div>
             <h2>Перфоратор BOSCH BFG 6000</h2>
-            <span class="old-price">30500 Р.</span><br>
+            <span class="old-price">30500 Р.</span>
             <span class="current-price">25500 Р.</span>
           </li>
           <li>
@@ -173,7 +175,7 @@
               <button class="btn-bookmark">В закладки</button>
             </div>
             <h2>Перфоратор BOSCH BFG 2000</h2>
-            <span class="old-price">30500 Р.</span><br>
+            <span class="old-price">30500 Р.</span>
             <span class="current-price">25500 Р.</span>
           </li>
         </ul>
@@ -274,7 +276,7 @@
             Вы можете забрать товар сами, <br>
             заехав в наш офис:
           </p>
-          <a class="map-link" href="" aria-label="карта проезда"><img src="img/address-map.png" width="300" height="158" alt="Карта проезда"></a>
+          <a class="map-link" href="#" aria-label="карта проезда"><img src="img/address-map.png" width="300" height="158" alt="Карта проезда"></a>
           <button class="btn-reply" type="button">Заблудились? Напишите нам!</button>
         </section>
       </div>
