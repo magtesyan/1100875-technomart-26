@@ -191,8 +191,8 @@ input[type="search"]:focus + .search-submit-btn path {
 }
 
 .headline {
-  margin-left: 60px;
-  margin-top: 0;
+  margin-left: 53px;
+  margin-top: 4px;
   margin-bottom: 0;
   font-size: 16px;
   font-style: italic;
@@ -200,8 +200,14 @@ input[type="search"]:focus + .search-submit-btn path {
   color: #ff3333;
 }
 
+.phone-and-address-containter {
+  margin-left: 58px;
+  width: 270px;
+}
+
 .header-address {
-  margin-left: 13px;
+  margin-left: 8px;
+  margin-top: 3px;
   font-size: 14px;
   color: #32425c;
 }
@@ -214,15 +220,19 @@ input[type="search"]:focus + .search-submit-btn path {
   border: 3px solid #ffffff;
   color: #ff3333;
   background: url(../img/icon-phone.svg) no-repeat;
-  background-position: 7% 50%;
+  background-position: 5% 50%;
 }
 
 .profile-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-content: center;
+  width: 299px;
   flex-wrap: wrap;
+  padding: 0;
   list-style: none;
 }
+
 
 .profile-menu a {
   display: block;
@@ -232,6 +242,14 @@ input[type="search"]:focus + .search-submit-btn path {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.user-name {
+  width: 100%;
+}
+
+.user-name-item {
+  width: 299px;
 }
 
 .profile-menu polygon,
@@ -264,12 +282,23 @@ a.user-name:hover {
 
 a.my-orders-link,
 a.account-link {
+  padding: 0;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
   color: #333366;
+  background-color: transparent;
 }
 
+.breaker {
+  width: 5px;
+  height: 5px;
+  margin-top: 17px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #333366;
+}
 
 .user-menu {
   display: flex;
@@ -290,7 +319,7 @@ a.account-link {
 
 .user-menu a {
   display: inline-block;
-  padding: 12px 20px 11px 37px;
+  padding: 12px 20px 12px 37px;
   width: 150px;
   text-align: center;
   font-size: 17px;
@@ -322,9 +351,17 @@ a.account-link {
   opacity: 0.3;
 }
 
+a.user-menu-bookmarks-link.bookmark-added {
+  background-color: #ee3643;
+}
+
 a.user-menu-cart-link {
   position: relative;
   padding-left: 39px;
+}
+
+a.user-menu-cart-link.basket-filled {
+  background-color: #ee3643;
 }
 
 .user-menu-cart-link::before {
