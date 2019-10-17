@@ -179,7 +179,7 @@ input[type="search"]:focus + .search-submit-btn path {
   align-items: flex-start;
   align-content: flex-start;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .header-mid-line {
@@ -201,7 +201,7 @@ input[type="search"]:focus + .search-submit-btn path {
 }
 
 .phone-and-address-containter {
-  margin-left: 58px;
+  margin-left: 23px;
   width: 270px;
 }
 
@@ -225,8 +225,9 @@ input[type="search"]:focus + .search-submit-btn path {
 
 .profile-menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-content: center;
+  flex-shrink: 1;
   width: 299px;
   flex-wrap: wrap;
   padding: 0;
@@ -236,20 +237,51 @@ input[type="search"]:focus + .search-submit-btn path {
 
 .profile-menu a {
   display: block;
-  padding: 12px 25px 12px 25px;
-  margin-left: 10px;
+  padding: 12px 25px 12px 21px;
+  margin-left: 0px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-name {
-  width: 100%;
+.login-item a {
+  padding: 13px 27px 12px 45px;
 }
 
-.user-name-item {
-  width: 299px;
+.login-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.registration-item {
+  margin-left: 10px;
+}
+
+.registration-item a {
+  padding: 13px 24px 12px 23px;
+}
+
+.login-icon {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  margin-left: -8px;
+  margin-top: 2px;
+}
+
+.user-name-span {
+  padding-left: 8px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1px;
+}
+
+.user-icon {
+  margin-left: -8px;
+  margin-top: 2px;
+  display: inline-block;
 }
 
 .profile-menu polygon,
@@ -280,10 +312,18 @@ a.user-name:hover {
   fill: #c5c5c5;
 }
 
+a.logout-link {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 9px;
+  padding-top: 15px;
+}
+
 a.my-orders-link,
 a.account-link {
   padding: 0;
-  margin-top: 10px;
+  padding-left: 18px;
+  margin-top: 6px;
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
@@ -291,11 +331,15 @@ a.account-link {
   background-color: transparent;
 }
 
+a.account-link {
+  padding-left: 14px;
+}
+
 .breaker {
-  width: 5px;
-  height: 5px;
-  margin-top: 17px;
-  margin-left: 10px;
+  width: 4px;
+  height: 4px;
+  margin-top: 13px;
+  margin-left: 14px;
   border-radius: 50%;
   background-color: #333366;
 }
@@ -416,17 +460,22 @@ a.user-menu-order-link:active {
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0;
   width: 940px;
+  min-height: 60px;
+  padding: 0 27px;
   list-style: none;
 }
 
+
+
 .site-navigation a {
   display: block;
-  padding: 17px 25px 17px 25px;
+  height: 100%;
+  padding: 19px 25px 18px 25px;
+  margin-bottom: 5px;
 }
 
 .site-navigation a:hover,
@@ -440,14 +489,48 @@ a.user-menu-order-link:active {
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  width: 940px;
+  margin: auto;
+  margin-top: 19px;
+  margin-bottom: 16px;
+  padding: 0;
   list-style: none;
 }
 
+.breadcrumbs li {
+  padding-left: 0px;
+  padding-right: 18px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+
+  height: 20px;
+  width: 10px;
+  background: url(../img/breadcrumb-icon-right-small.svg) no-repeat 50% 50%;
+}
+
 .breadcrumbs a {
+  display: inline-block;
+  margin-right: 14px;
+  vertical-align: middle;
+  min-height: 21px;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+}
+
+
+.breadcrumbs li:first-child a {
+  width: 14px;
+  height: 100%;
+  padding-left: 0;
+  background: url(../img/icon-home.svg) no-repeat 50% 25%;
 }
 
 .filter-heading,
@@ -791,15 +874,14 @@ p.filter-range-between {
   flex-wrap: wrap;
   align-items: center;
   margin: auto;
-  margin-top: 50px;
   margin-bottom: 25px;
   width: 940px;
-
+  min-height: 89px;
   background-color: #f9f5f0;
 }
 
 .main-section-heading {
-  margin-left: 30px;
+  margin-left: 29px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1056,7 +1138,8 @@ p.filter-range-between {
   min-height: 145px;
 }
 
-.services-container {
+.services-container,
+.perforators-article-section {
   background-color: #f4f8fa;
 }
 
@@ -1208,8 +1291,10 @@ p.filter-range-between {
   background-color: #ee3643;
 }
 
-.article-perforators {
-  background-color: #f2f6f8;
+.perforators-article {
+  width: 940px;
+  margin: auto;
+  padding-top: 68px;
 }
 
 .footer-upper-part-container {
