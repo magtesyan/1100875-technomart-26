@@ -111,12 +111,20 @@
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-fieldset">
                 <legend class="pt-sans">Цена:</legend>
-                <div class="input-range-container">
-                  <input type="range" min="0" max="40000" step="1000">
+                <div class="filter-range-container">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
                 </div>
-                <span class="filter-range-from-to pt-sans">0</span>
-                <span class="filter-range-between pt-sans">—</span>
-                <span class="filter-range-from-to pt-sans">30000</span>
+                <div class="price-controls">
+                  <input class="min-price pt-sans" name="min-price" type="text" value="0">
+                  <span class="filter-range-between pt-sans">—</span>
+                  <input class="pt-sans" name="max-price" type="text" value="30000">
+                </div>
               </fieldset>
               <hr class="filter-manufacturers-block-top">
               <fieldset class="manufacturers-filter-fieldset">
@@ -340,5 +348,19 @@
           </div>
         </div>
       </footer>
+
+      <section class="modal modal-product-added">
+        <h2 class="modal-heading">Товар добавлен в корзину</h2>
+        <div class="modal-buttons">
+          <a class="modal-order-btn" href="#">Оформить заказ</a>
+          <a class="modal-continue-btn" href="#">Продолжить покупки</a>
+        </div>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        </form>
+      </section>
+
+      <script src="js/popup-buy.js"></script>
     </body>
   </html>

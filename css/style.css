@@ -575,34 +575,90 @@ legend.pt-sans {
   font-weight: bold;
 }
 
-.input-range-container {
+.filter-range-container {
   margin-bottom: 10px;
   text-align: center;
   background-color: #f7f3ec;
 }
 
-input[type="range"] {
-  width: 180px;
-  padding: 34px 20px 28px 20px;
+.range-controls {
+  position: relative;
+
+  height: 80px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
 }
 
-.filter-range-from-to {
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 140px;
+}
+
+.price-controls {
+  background-color: #f7f3ec;
+  margin-bottom: 15px;
+}
+
+.price-controls input {
   display: inline-block;
-  width: 95px;
-  padding: 8px 10px 8px 10px;
+  width: 90px;
+  min-height: 37px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
   font-size: 17px;
   line-height: 18px;
-  text-align: center;
   background-color: #f7f3ec;
+}
+
+.price-controls input.min-price {
+  padding-left: 10px;
 }
 
 span.filter-range-between {
   display: inline-block;
-  width: 20px;
-  margin-bottom: 26px;
+  width: 30px;
+  padding-top: 9px;
+  padding-bottom: 11px;
   text-align: center;
   font-size: 16px;
   line-height: 18px;
+  background-color: #ffffff;
 }
 
 hr.filter-manufacturers-block-top {
@@ -840,7 +896,7 @@ a.sorting-down {
   min-height: 123px;
   background-image: url("../img/icon-instruments.svg");
   background-repeat: no-repeat;
-  background-position: 83% 50%;
+  background-position: 87% 50%;
 }
 
 .main-product-category-technique {
@@ -849,7 +905,7 @@ a.sorting-down {
   min-height: 123px;
   background-image: url("../img/icon-technique.svg");
   background-repeat: no-repeat;
-  background-position: 83% 50%;
+  background-position: 86% 50%;
 }
 
 .special-offer-discount {
@@ -858,7 +914,7 @@ a.sorting-down {
   min-height: 123px;
   background-image: url("../img/icon-discount.svg");
   background-repeat: no-repeat;
-  background-position: 83% 50%;
+  background-position: 81% 50%;
 }
 
 .special-offer-delivery {
@@ -867,14 +923,14 @@ a.sorting-down {
   min-height: 123px;
   background-image: url("../img/icon-delivery.svg");
   background-repeat: no-repeat;
-  background-position: 83% 50%;
+  background-position: 86% 50%;
 }
 
 .main-product-category-list p,
 .special-offers-list p {
-  margin-left: 24px;
-  margin-top: 18px;
-  margin-bottom: 15px;
+  margin-left: 22px;
+  margin-top: 20px;
+  margin-bottom: 13px;
 }
 
 .main-product-category-list a,
@@ -883,7 +939,7 @@ a.sorting-down {
   border-radius: 2px;
   font-size: 14px;
   line-height: 18px;
-  width: 139px;
+  width: 135px;
   padding: 10px 0;
   margin-left: 25px;
   margin-bottom: 22px;
@@ -908,6 +964,7 @@ a.sorting-down {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
+  margin-bottom: 32px;
   width: 940px;
   min-height: 266px;
 }
@@ -974,7 +1031,7 @@ a.sorting-down {
 
 .slider-btn-right {
   position: absolute;
-  right: 25px;
+  right: 20px;
   bottom: 112px;
   border: none;
   width: 22px;
@@ -990,7 +1047,9 @@ a.sorting-down {
   left: 25px;
   z-index: 2;
   border-radius: 4px;
-  padding: 10px 40px;
+  padding: 10px 48px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
 }
@@ -1012,7 +1071,7 @@ a.sorting-down {
 .slider-controls {
   position: absolute;
   bottom: 22px;
-  left: 50%;
+  left: 48%;
   z-index: 20;
   font-size: 0;
 }
@@ -1293,6 +1352,10 @@ a.pagination-next-btn {
   background-color: #ee3643;
 }
 
+.manufacturers-section {
+  margin-bottom: 35px;
+}
+
 .manufacturers {
   display: flex;
   flex-wrap: wrap;
@@ -1339,7 +1402,11 @@ a.pagination-next-btn {
   min-height: 145px;
 }
 
-.services-container,
+.services-container {
+  padding-bottom: 80px;
+  background-color: #f4f8fa;
+}
+
 .perforators-article-container {
   padding-bottom: 56px;
   background-color: #f4f8fa;
@@ -1363,7 +1430,7 @@ a.pagination-next-btn {
 }
 
 .services-article {
-  padding-bottom: 75px;
+  padding-bottom: 54px;
 }
 
 .buying-conditions-section {
@@ -1396,7 +1463,7 @@ a.pagination-next-btn {
 .buying-conditions a {
   display: block;
   padding-top: 15px;
-  padding-left: 25px;
+  padding-left: 22px;
   padding-bottom: 15px;
   font-size: 21px;
   line-height: 30px;
@@ -1422,9 +1489,14 @@ a.pagination-next-btn {
   padding: 0;
 }
 
+.services-tab-description {
+  margin: 0;
+  margin-top: 24px;
+}
+
 .delivery-slide {
   background: url("../img/services/delivery-truck.png") no-repeat;
-  background-position: 100% 100%;
+  background-position: 100% 26px;
   min-height: 261px;
 }
 
@@ -1440,6 +1512,7 @@ a.pagination-next-btn {
   flex-wrap: wrap;
   width: 940px;
   margin: auto;
+  margin-bottom: 86px;
 }
 
 .about-company-section {
@@ -1452,8 +1525,8 @@ a.pagination-next-btn {
 
 .delivery-partners {
   padding: 0;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-top: 21px;
+  margin-bottom: 43px;
   list-style: none;
 }
 
@@ -1461,7 +1534,7 @@ a.pagination-next-btn {
   font-size: 18px;
   line-height: 20px;
   padding-left: 35px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   background: url("../img/delivery-partners-list-marker.png") no-repeat 0 8px;
 }
 
@@ -1477,12 +1550,12 @@ a.pagination-next-btn {
 
 .map-link {
   display: block;
-  margin-top: 39px;
-  margin-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .btn-reply {
-  padding: 10px 40px;
+  padding: 10px 61px;
   margin: auto;
   font-size: 14px;
   line-height: 18px;
@@ -1701,7 +1774,7 @@ a.pagination-next-btn {
 }
 
  .modal-reply,
-.modal-product-added {
+ .modal-product-added {
   /* display: flex; */
   display: none;
   top: 30%;
@@ -1717,34 +1790,65 @@ a.pagination-next-btn {
 
 .reply-form {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  width: 460px;
 }
 
 .reply-form label {
+  display: inline-block;
+  margin-right: 165px;
   margin-bottom: 13px;
   line-height: 18px;
+}
+
+.reply-form label[for="user-email"] {
+  margin-right: 0;
+}
+
+.reply-form label[for="user-text"] {
+  display: block;
+  width: 460px;
 }
 
 .reply-form input[type="text"] {
   width: 220px;
   min-height: 38px;
   margin-bottom: 51px;
+  margin-right: 16px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
 }
 
-.reply-form input[type="text"]:hover {
+.reply-form input[type="text"].popup-email-input {
+  margin-right: 0;
+}
+
+.reply-form textarea {
+  width: 460px;
+  min-height: 114px;
+  margin-bottom: 74px;
+  rows: 4;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.reply-form input[type="text"]:hover,
+.reply-form textarea:hover {
   border-color: #b5b5b5;
 }
 
 .reply-form input[type="text"]:focus,
-.reply-form input[type="text"]:active {
+.reply-form input[type="text"]:active,
+.reply-form textarea:focus,
+.reply-form textarea:active {
   border-color: #ee3643;
   outline: 0;
 }
 
 
-.reply-form input[type="text"]::placeholder {
+.reply-form input[type="text"]::placeholder,
+.reply-form textarea::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1752,7 +1856,7 @@ a.pagination-next-btn {
   color: #999999;
 }
 
-.reply-form button,
+.reply-form button.modal-send,
 .modal-order-btn,
 .modal-continue-btn {
   padding: 10px 40px;
@@ -1860,4 +1964,36 @@ a.pagination-next-btn {
   background-color: #ffffff;
   margin-right: 0;
   padding: 10px 45px;
+}
+
+.modal-show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%,
+  100% { transform: translateX(0); }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% { transform: translateX(-10px); }
+
+  20%,
+  40%,
+  60%,
+  80% { transform: translateX(10px); }
 }

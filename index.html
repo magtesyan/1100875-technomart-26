@@ -195,7 +195,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="manufacturers-section">
         <div class="main-section-heading-and-link-container">
           <h2 class="main-section-heading">Популярные производители:</h2>
           <a href="">Все производители</a>
@@ -231,7 +231,7 @@
             <ul class="buying-conditions-tab-slides">
               <li class="delivery-slide">
                 <h4>Доставка</h4>
-                <p class="pt-sans">
+                <p class="services-tab-description pt-sans">
                   Мы с удовольствием доставим ваш товар прямо <br>
                   к вашему подъезду совершенно бесплатно! <br>
                   Ведь мы неплохо заработаем, <br>
@@ -271,8 +271,7 @@
           <p class="pt-sans">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-          </p>
-          <p class="pt-sans">
+            <br><br>
             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
@@ -290,7 +289,7 @@
             Вы можете забрать товар сами, <br>
             заехав в наш офис:
           </p>
-          <a class="map-link" href="#" aria-label="карта проезда"><img src="img/address-map.png" width="300" height="158" alt="Карта проезда"></a>
+          <a class="map-link" href="" aria-label="карта проезда"><img src="img/address-map.png" width="300" height="158" alt="Карта проезда"></a>
           <button class="btn-reply" type="button">Заблудились? Напишите нам!</button>
         </section>
       </div>
@@ -354,14 +353,22 @@
       <h2 class="visually-hidden">Форма отправки сообщения</h2>
       <form class="reply-form" action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name">Ваше имя:</label>
+        <label for="user-email">Ваш e-mail:</label>
         <input id="user-name" type="text" name="name" placeholder="Представтесь, пожалуйста">
-        <button class="modal-send" type="button">Отправить</button>
+        <input class="popup-email-input" id="user-email" type="text" name="email" placeholder="email@example.com">
+        <label for="user-text">Текст письма:</label>
+        <textarea id="user-text" type="textarea" name="text" placeholder="В свободной форме"></textarea>
+        <button class="modal-send" type="submit">Отправить</button>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </form>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/address-map-big.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CGDKzR2n" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
+      <!-- <img src="img/address-map-big.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
@@ -378,5 +385,9 @@
       </button>
       </form>
     </section>
+
+    <script src="js/popup-reply.js"></script>
+    <script src="js/popup-map.js"></script>
+    <script src="js/popup-buy.js"></script>
   </body>
 </html>
