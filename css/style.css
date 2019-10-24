@@ -66,7 +66,6 @@ h3 {
 
 .header-top-line {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 940px;
   height: 42px;
@@ -77,7 +76,6 @@ h3 {
 
 .logo-and-search {
   display: flex;
-  width: 1280px;
   height: 100%;
 }
 
@@ -174,20 +172,13 @@ input[type="search"]:focus + .search-submit-btn path {
 }
 
 
-.header-mid-containter {
+.header-mid-line {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
   margin: auto;
   margin-bottom: 39px;
-}
-
-.header-mid-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
   width: 940px;
 }
 
@@ -203,7 +194,6 @@ input[type="search"]:focus + .search-submit-btn path {
 
 .phone-and-address-containter {
   margin-left: 23px;
-  width: 270px;
 }
 
 .header-address {
@@ -218,6 +208,7 @@ input[type="search"]:focus + .search-submit-btn path {
   padding: 10px 50px 10px 70px;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   border: 3px solid #ffffff;
   color: #ff3333;
   background: url(../img/icon-phone.svg) no-repeat;
@@ -363,8 +354,6 @@ a.account-link {
 
 .user-menu {
   display: flex;
-  justify-content: space-between;
-  height: 100%;
   padding: 0;
   list-style: none;
 }
@@ -1587,7 +1576,7 @@ a.pagination-next-btn {
   flex-wrap: wrap;
   width: 940px;
   margin: auto;
-  margin-bottom: 86px;
+  margin-bottom: 93px;
 }
 
 .about-company-section {
@@ -1626,7 +1615,7 @@ a.pagination-next-btn {
 .map-link {
   display: block;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 .btn-reply {
@@ -1673,8 +1662,8 @@ a.pagination-next-btn {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 95px;
-  margin-bottom: 2px;
+
+  margin-bottom: 49px;
 }
 
 .logo-footer {
@@ -1759,7 +1748,7 @@ a.pagination-next-btn {
   flex-wrap: wrap;
   align-items: center;
   width: 940px;
-  min-height: 107px;
+  padding: 31px 0;
   margin: auto;
 }
 
