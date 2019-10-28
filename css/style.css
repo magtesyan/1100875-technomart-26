@@ -240,9 +240,6 @@ input[type="search"]:focus + .search-submit-btn path {
   display: flex;
   padding: 0;
   list-style: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
 }
 
 .profile-menu a {
@@ -2026,7 +2023,6 @@ a.pagination-next-btn {
   padding-left: 15px;
   padding-top: 12px;
   margin-bottom: 74px;
-  rows: 4;
   line-height: 18px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
