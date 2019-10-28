@@ -1,5 +1,6 @@
 var buyBtn = document.querySelectorAll(".btn-buy");
 var productBuyPopup = document.querySelector(".modal-product-added");
+var orderBtn = productBuyPopup.querySelector(".modal-order-btn");
 var closeProductBuyPopup = productBuyPopup.querySelector(".modal-close");
 var continueBtn = productBuyPopup.querySelector(".modal-continue-btn");
 
@@ -18,6 +19,7 @@ for (var i = 0; i < buyBtn.length; i++) {
   buyBtn[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     productBuyPopup.classList.add("modal-show");
+    orderBtn.focus();
   });
 }
 
