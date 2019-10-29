@@ -2457,6 +2457,10 @@ a.pagination-next-btn {
           transform: rotate(-45deg);
 }
 
+.map-close {
+  top: 3px;
+}
+
 .modal-close:focus::after,
 .modal-close:focus::before {
   background-color: #b22832;

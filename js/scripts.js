@@ -46,6 +46,7 @@ window.addEventListener("keydown", function (evt) {
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.add("modal-show");
+  closeMapPopup.focus();
 });
 
 closeMapPopup.addEventListener("click", function (evt) {
