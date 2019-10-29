@@ -332,7 +332,10 @@ summary {
 /* placeholder in Firefox and Edge */
 
 ::-moz-placeholder,
-:-moz-placeholder,
+:-moz-placeholder {
+  opacity: 1;
+  
+}
 ::-webkit-input-placeholder {
   opacity: 1;
 }
