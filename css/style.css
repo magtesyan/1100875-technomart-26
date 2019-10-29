@@ -202,6 +202,7 @@ input[type="search"]:focus + .search-submit-btn path {
   margin-right: 72px;
   margin-top: 4px;
   margin-bottom: 0;
+  width: 197px;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -244,7 +245,7 @@ input[type="search"]:focus + .search-submit-btn path {
 
 .profile-menu a {
   display: block;
-  padding: 12px 20px 12px 15px;
+  padding: 12px 20px 12px 46px;
   margin-left: 0px;
   font-size: 21px;
   line-height: 21px;
@@ -278,6 +279,10 @@ input[type="search"]:focus + .search-submit-btn path {
   vertical-align: middle;
 }
 
+.user-name-item {
+  position: relative;
+}
+
 .user-name-span {
   display: inline-block;
   vertical-align: top;
@@ -286,6 +291,8 @@ input[type="search"]:focus + .search-submit-btn path {
 
 .user-icon {
   display: inline-block;
+  position: absolute;
+  left: 13px;
   margin-top: 2px;
   vertical-align: middle;
 }
@@ -322,8 +329,10 @@ a.user-name:hover {
 .logout-link:active span,
 .logout-link:active span,
 .registration-link:active span,
-.my-orders-link:active span,
-.account-link:active span {
+.my-orders-link:active,
+.my-orders-link:active:hover,
+.account-link:active,
+.account-link:active:hover {
   color: #000000;
   opacity: 0.3;
 }
@@ -343,7 +352,7 @@ a.user-name:hover {
 a.logout-link {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 19px;
+  padding-left: 16px;
   padding-right: 9px;
   padding-top: 15px;
 }
@@ -795,7 +804,7 @@ legend.supply-legend {
 
 .sorting {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 20px;
   background-color: #f7f3ec;
 }
@@ -803,26 +812,15 @@ legend.supply-legend {
 .sorting-options-list {
   display: flex;
   justify-content: flex-start;
-
+  flex-wrap: wrap;
   margin-left: 100px;
+  margin-top: 7px;
   list-style: none;
 }
 
 .sorting-options-list li {
-  margin-right: 0px;
-  margin-left: 70px;
-}
-
-.sorting-options-list li:first-child {
-  margin-left: 0px;
-}
-
-.sorting-options-list li:nth-child(5) {
-  margin-left: 0px;
-}
-
-.sorting-options-list li:nth-child(4) {
-  margin-left: 100px;
+  margin-right: 67px;
+  margin-left: 0;
 }
 
 .sorting-options-list a {
@@ -830,19 +828,22 @@ legend.supply-legend {
   line-height: 18px;
   text-transform: uppercase;
   border-bottom: 1px dotted #ee3643;
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-options-list a:hover {
   border-bottom: 1px solid #ee3643;
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .sorting-options-list a.active {
   border: none;
   color: #ee3643;
   opacity: 1;
+}
+
+.sorting-up-down-list {
+  list-style: none;
 }
 
 a.sorting-up,
@@ -854,8 +855,8 @@ a.sorting-down {
 .sorting-up::after {
   content: '';
   position: absolute;
-  left: -59px;
-  bottom: -17px;
+  top: 8px;
+  right: 48px;
   border: 6px solid transparent;
   border-bottom: 10px solid #c5c5c5;
 }
@@ -863,8 +864,8 @@ a.sorting-down {
 .sorting-down::after {
   content: '';
   position: absolute;
-  left: -26px;
-  bottom: -24px;
+  top: 14px;
+  right: 17px;
   border: 6px solid transparent;
   border-top: 10px solid #c5c5c5;
 }
@@ -1187,11 +1188,13 @@ a.sorting-down {
   min-height: 89px;
   background-color: #f9f5f0;
 }
+
 .perforator-heading-container {
   background-color: #f2f6f8;
 }
 
 .main-section-heading {
+  width: 55%;
   margin-left: 29px;
   font-size: 30px;
   line-height: 30px;
@@ -1206,12 +1209,12 @@ a.sorting-down {
 
 .main-section-heading ~ a {
   margin-right: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 253px;
   text-align: center;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 18px;
   text-transform: uppercase;
   border-radius: 4px;
   background-color: #ee3643;
@@ -1321,7 +1324,7 @@ a.sorting-down {
   font-size: 17px;
   line-height: 18px;
   text-decoration: line-through;
-  color: #999999;
+  color: #a9a9a9;
 }
 
 .current-price {
@@ -1351,8 +1354,9 @@ a.sorting-down {
   position: relative;
   width: 135px;
   margin: auto;
-  margin-bottom: 7px;
-  padding-top:  7px;
+  margin-bottom: 10px;
+  padding-top:  10px;
+  padding-left: 3px;
   padding-bottom: 7px;
   font-size: 14px;
   line-height: 18px;
@@ -1367,8 +1371,8 @@ a.sorting-down {
 .btn-buy::before {
   content: "";
   position: absolute;
-  left: 15px;
-  top: 8px;
+  left: 14px;
+  top: 10px;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
@@ -1389,13 +1393,17 @@ a.sorting-down {
 .btn-buy:active {
   outline: none;
   background-color: #518534;
+  box-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .btn-bookmark {
   width: 135px;
   margin: auto;
   margin-bottom: 7px;
-  padding-top:  7px;
+  padding-top:  8px;
+  padding-left: 3px;
   padding-bottom: 7px;
   font-size: 14px;
   line-height: 18px;
@@ -1552,7 +1560,7 @@ a.pagination-next-btn {
 }
 
 .services-container {
-  padding-bottom: 80px;
+  padding-bottom: 27px;
   background-color: #f4f8fa;
 }
 
@@ -1581,12 +1589,14 @@ a.pagination-next-btn {
 
 .services-article {
   z-index: 0;
+  width: 417px;
   padding-bottom: 54px;
 }
 
 .buying-conditions-section {
   display: flex;
   position: relative;
+  width: 950px;
 }
 
 .buying-conditions {
@@ -1645,6 +1655,7 @@ a.pagination-next-btn {
 .services-tab-description {
   margin: 0;
   margin-top: 24px;
+  width: 299px;
 }
 
 .delivery-slide {
@@ -1657,21 +1668,33 @@ a.pagination-next-btn {
 .guarantee-slide {
   display: none;
   background: url("../img/services/guarantee-medal.png") no-repeat;
-  background-position: 100% 26px;
+  background-position: 104% 3px;
   min-height: 261px;
+}
+
+.guarantee-tab-description {
+  margin: 0;
+  margin-top: 24px;
+  width: 377px;
 }
 
 .credit-slide {
   display: none;
   background: url("../img/services/credit-form.png") no-repeat;
-  background-position: 100% 26px;
+  background-position: 100% 2px;
   min-height: 261px;
 }
 
+.credit-tab-description {
+  margin: 0;
+  margin-top: 24px;
+  width: 278px;
+  margin-bottom: 34px;
+}
+
 .send-credit-request {
-  display: none;
   width: 195px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 44px 10px 44px;
   margin-top: 35px;
   font-size: 14px;
   line-height: 18px;
@@ -1681,6 +1704,14 @@ a.pagination-next-btn {
   border-radius: 3px;
 }
 
+.send-credit-request:hover {
+  background-color: #ca2c37;
+}
+
+.send-credit-request:active {
+  background-color: #ba2732;
+}
+
 .company-and-contacts-container {
   display: flex;
   justify-content: space-between;
@@ -1688,14 +1719,27 @@ a.pagination-next-btn {
   width: 940px;
   margin: auto;
   margin-bottom: 93px;
+  margin-top: 53px;
 }
 
 .about-company-section {
   width: 535px;
 }
 
+.about-first-paragraph {
+  margin-bottom: 24px;
+}
+
+.about-second-paragraph {
+  width: 400px;
+}
+
 .contacts-section {
   width: 300px;
+}
+
+.contacts-description {
+  width: 200px;
 }
 
 .delivery-partners {
@@ -1853,8 +1897,8 @@ a.pagination-next-btn {
   color: #ffffff;
 }
 
-.footer-site-navigation li:active,
-.footer-product-category-navigation li:active {
+.footer-site-navigation a:active,
+.footer-product-category-navigation a:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -1963,12 +2007,12 @@ a.pagination-next-btn {
  .modal-reply,
  .modal-product-added {
   display: none;
-  top: 30%;
+  top: 352px;
   left: 50%;
 
   width: 620px;
   margin-left: -310px;
-  padding: 55px 80px 37px 80px;
+  padding: 53px 80px 37px 81px;
   box-shadow: inset 0 7px 0 rgb(238, 54, 67),
               inset 0 -112px 0 rgb(241, 241, 241),
               0px 20px 40px 0px rgba(0, 1, 1, 0.75);
@@ -1983,8 +2027,8 @@ a.pagination-next-btn {
 .reply-form label {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 165px;
-  margin-bottom: 13px;
+  margin-right: 168px;
+  margin-bottom: 8px;
   line-height: 18px;
 }
 
@@ -1999,11 +2043,11 @@ a.pagination-next-btn {
 
 .reply-form input[type="text"] {
   width: 220px;
-  padding-left: 15px;
+  padding-left: 13px;
   line-height: 18px;
   min-height: 38px;
-  margin-bottom: 51px;
-  margin-right: 16px;
+  margin-bottom: 21px;
+  margin-right: 20px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
 }
@@ -2012,17 +2056,31 @@ a.pagination-next-btn {
   margin-right: 0;
 }
 
+.reply-form input[type="text"]::placeholder,
+.reply-form input[type="text"]:-ms-input-placeholder,
+.reply-form input[type="text"]::-ms-input-placeholder,
+.reply-form textarea::placeholder,
+.reply-form textarea:-ms-input-placeholder,
+.reply-form textarea::-ms-input-placeholder {
+  color: #a9a9a9;
+}
+
 .reply-form input[type="text"]::-moz-placeholder,
 .reply-form textarea::-moz-placeholder {
+  color: #a9a9a9;
+}
+
+.reply-form input[type="text"]::-webkit-input-placeholder,
+.reply-form textarea::-webkit-input-placeholder {
   color: #a9a9a9;
 }
 
 .reply-form textarea {
   width: 460px;
   min-height: 114px;
-  padding-left: 15px;
-  padding-top: 12px;
-  margin-bottom: 74px;
+  padding-left: 13px;
+  padding-top: 11px;
+  margin-bottom: 77px;
   line-height: 18px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
@@ -2056,9 +2114,8 @@ a.pagination-next-btn {
   background-color: #ee3643;
 }
 
-.reply-form button:hover,
+.reply-form .modal-send:hover,
 .modal-order-btn:hover,
-.reply-form button:focus,
 .modal-order-btn:focus {
   background-color: #b22832;
 }
@@ -2088,11 +2145,11 @@ a.pagination-next-btn {
 
 .modal-close {
   position: absolute;
-  top: 9px;
-  right: 9px;
+  top: 11px;
+  right: 12px;
 
-  width: 22px;
-  height: 22px;
+  width: 23px;
+  height: 23px;
 
   background-color: transparent;
   border: 0;
@@ -2106,11 +2163,11 @@ a.pagination-next-btn {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: 14px;
   left: 2px;
 
-  width: 19px;
-  height: 3px;
+  width: 27px;
+  height: 4px;
 
   background-color: #ee3643;
 }
@@ -2125,12 +2182,14 @@ a.pagination-next-btn {
 
 .modal-product-added {
   flex-direction: column;
+  top: 111px;
+  padding: 47px 80px 45px 80px;
 }
 
 .modal-heading {
   position: relative;
-  padding-left: 100px;
-  margin-bottom: 104px;
+  padding-left: 97px;
+  margin-bottom: 111px;
   text-transform: none;
 }
 
@@ -2139,7 +2198,7 @@ a.pagination-next-btn {
   position: absolute;
   width: 66px;
   height: 66px;
-  top: -20px;
+  top: -17px;
   left: 0;
   background: url(../img/cart-popup-check.png) no-repeat;
 }
