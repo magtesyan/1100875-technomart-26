@@ -420,7 +420,7 @@ a.account-link {
   margin-left: 23px;
 }
 
-.profile-menu:last-child li:nth-child(2)::before {
+.profile-menu-account-item::before {
   content: "";
   position: absolute;
   bottom: 7px;
