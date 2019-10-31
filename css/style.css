@@ -25,6 +25,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 940px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -79,7 +80,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 940px;
   margin: auto;
   font-size: 17px;
   line-height: 18px;
@@ -218,6 +218,7 @@ input[type="search"]:focus + .search-submit-btn path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 940px;
 }
 
 .header-mid-line {
@@ -2058,6 +2059,7 @@ a.pagination-next-btn {
 .footer-upper-part-container {
   background-color: #32425c;
   margin-top: 0;
+  min-width: 940px;
 }
 
 .footer-upper-part {
@@ -2193,6 +2195,7 @@ a.pagination-next-btn {
 }
 
 .footer-lower-containter {
+  min-width: 940px;
   background-color: #293449;
 }
 
