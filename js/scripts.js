@@ -15,6 +15,10 @@ var userName = replyPopup.querySelector("[name=name]");
 var replyForm = replyPopup.querySelector("form");
 var letterText = replyPopup.querySelector("textarea");
 
+var sliderControlsLeft = document.querySelector(".slider-btn-left");
+var sliderControlsRight = document.querySelector(".slider-btn-right");
+var sliderControlsDots = document.querySelectorAll(".special-offers-slider-section input");
+
 for (var i = 0; i < buyBtn.length; i++) {
   buyBtn[i].addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -78,6 +82,8 @@ closePopup.addEventListener("click", function (evt) {
 replyForm.addEventListener("submit", function (evt) {
   if (!letterText.value) {
     evt.preventDefault();
+    replyPopup.classList.remove("modal-error");
+    void replyPopup.offsetWidth;
     replyPopup.classList.add("modal-error");
   }
 });
@@ -91,3 +97,26 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+sliderControlsLeft.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  changeSlide();
+});
+
+sliderControlsRight.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  changeSlide();
+});
+
+function changeSlide() {
+  //for (var i = 0; i < sliderControlsDots.length; i++) {
+    //console.log(sliderControlsDots[i].checked);
+    if (sliderControlsDots[0].checked === false) {
+      sliderControlsDots[0].checked = true;
+    }
+    else {
+      sliderControlsDots[1].checked = true;
+    }
+    //console.log(sliderControlsDots[i].checked);
+//  }
+}
